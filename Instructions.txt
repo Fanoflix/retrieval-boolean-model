@@ -1,0 +1,12 @@
+Open CMD in directory
+Run Command: conda activate base
+
+If conda is not installed
+
+
+Run Command: python preprocessing.py
+Run Command: python app.py
+
+NOTE: If you get error "Flask is not installed"
+
+Run Command: pip install flask

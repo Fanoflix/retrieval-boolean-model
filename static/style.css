@@ -1,0 +1,157 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: rgb(34, 34, 34);
+}
+
+.heading {
+  margin-top: 5%;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  color: rgb(92, 92, 92);
+  width: 100%;
+  font-weight: 600;
+  font-variant: small-caps;
+  text-align: center;
+}
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.searchbar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -200px;
+  margin-left: -400px;
+  width: 800px;
+  height: 40px;
+  padding: 12px;
+
+  outline: none;
+  color: white;
+  background-color: rgb(28, 28, 28);
+  border: 2px solid rgb(89, 89, 89);
+  transition: border 0.2s ease-in;
+}
+
+.searchbar:focus {
+  border: 2px solid rgb(252, 252, 252);
+  transition: border 0.2s ease-out;
+}
+
+.submit-btn {
+  border: 2px solid rgb(89, 89, 89);
+  outline: none;
+  color: white;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -100px;
+  margin-left: -50px;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  transition: 0.1s width ease-in, margin-left 0.1s ease-in, border 0.2s ease-in;
+
+  font-size: 13px;
+  background-color: rgb(34, 34, 34);
+}
+
+.submit-btn:hover {
+  will-change: transform, border-radius;
+  transition: 0.1s width ease-in, margin-left 0.1s ease-in, border 0.2s ease-out;
+  width: 130px;
+  margin-left: -65px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+  box-shadow: 0px 0px 15px rgb(124, 124, 124);
+  background-color: rgb(26, 26, 26);
+
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  will-change: transform;
+  animation: animate 30s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(20px, -50px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.circle2 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgb(104, 104, 104);
+
+  background-color: rgb(26, 26, 26);
+
+  position: fixed;
+  right: 5%;
+  top: 60%;
+  will-change: transform;
+  animation: animate2 30s ease-in-out infinite;
+}
+
+@keyframes animate2 {
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: translate(-150px, -50px);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.circle3 {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgb(151, 151, 151);
+  background-color: rgb(26, 26, 26);
+
+  position: fixed;
+  right: 15%;
+  top: 60%;
+  will-change: transform;
+  animation: animate3 40s ease-in-out infinite;
+}
+
+@keyframes animate3 {
+  30% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: translate(-150px, -50px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
